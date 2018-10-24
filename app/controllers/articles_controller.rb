@@ -3,7 +3,6 @@ class ArticlesController < ApplicationController
     
     def index
         @articles = Article.all_cached
-        @stats = Rails.cache.stats.first.last
     end
     
     def show
